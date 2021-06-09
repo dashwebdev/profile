@@ -1,70 +1,324 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Welcome</title>
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  
-  <link rel="stylesheet" href="css/demo.css" />
-  <link rel="stylesheet" href="css/templatemo-style.css">
-  
-  <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
-		
-	</head>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-	<body>
+        <title>DashWeb</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">DashWeb</a>
 
-			<div id="particles-js"></div>
-		
-			<ul class="cb-slideshow">
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	        </ul>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#share" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#decoration" class="nav__link">Services</a></li>
+                        <!-- <li class="nav__item"><a href="#accessory" class="nav__link">Accessory</a></li> -->
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
 
-			<div class="container-fluid">
-				<div class="row cb-slideshow-text-container ">
-					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
-					<header class="mb-5"><h1>DashWeb</h1></header>
-					<p class="mb-5">Hello there 👋, <br> We're launching soon, follow our socials for updates!</p>
-					
-                    <!-- <form action="#" method="get" class="subscribe-form">
-               	    	<div class="row form-section">
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
 
-							<div class="col-md-7 col-sm-7 col-xs-7">
-			                      <input name="email" type="text" class="form-control" id="contact_email" placeholder="Your Email..." required/>
-				  			</div>
-							<div class="col-md-5 col-sm-5 col-xs-5">
-								<button type="submit" class="tm-btn-subscribe">Subscribe</button>
-							</div>
-						
-						</div>
-                    </form> -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="./assets/img/Browsing.svg" alt="">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Build Incredible Website With DashWeb</h1>
+                        <p class="home__description">Your website are just a few clicks away.</p>
+                        <a href="#" class="button">Let's Talk</a>
+                    </div>   
+                </div>
+            </section>
+
+            <!--========== SHARE ==========-->
+            <section class="share section bd-container" id="share">
+                <h2 class="section-title">About Us</h2>
+                <div class="share__container bd-grid">
+                    <div class="share__data">
+                        <h2 class="section-title-center">Who Are We?</h2>
+                        <p class="share__description">We are a group of professional designers and developers working together to provide the best products.</p>
+                        <!-- <a href="#" class="button">talk</a> -->
+                    </div>
+
+                    <div class="share__img">
+                        <img src="./assets/img/Responsive-web.svg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--========== Services ==========-->
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title">Our Services</h2>
+                <div class="decoration__container bd-grid">
+                    <div class="decoration__data">
+                        <img src="./assets/img/webdev2.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">UI/UX Designing</h3>
+                        <p class="decoration_description">We develop the best user interface and provide the best user experience through our awesome designs.</p>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="./assets/img/webdev1.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Web Development</h3>
+                        <p class="decoration_description">We make modern websites with breath-taking designs. Our websites are fast, reliable and affordable.</p>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="./assets/img/webdev3.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Wordpress Development</h3>
+                        <p class="decoration_description">We develop all kinds of wordpress from basic static pages and blogs to advanced e-commerce websites.</p>
+                    </div>
+
                     
-					<div class="tm-social-icons-container text-xs-center">
-	                    <a href="#" class="tm-social-link"><i class="fa fa-instagram"></i></a>
-	                    <a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>
-	                    <a href="https://github.com/dashwebdev" class="tm-social-link"><i class="fa fa-github"></i></a>
-	                    <!-- <a href="#" class="tm-social-link"><i class="fa fa-linkedin"></i></a> -->
-	                </div>
+                    <!-- <div class="decoration__data">
+                        <img src="assets/img/decoration3.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Christmas Trees</h3>
+                        <a href="#" class="button button-link">Go Shopping</a>
+                    </div>
 
-					</div>
-				</div>	
-				<div class="footer-link">
-					<p>Copyright © 2021 DashWeb</p>
-				</div>
-			</div>	
-	</body>
+                    <div class="decoration__data">
+                        <img src="assets/img/decoration3.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Christmas Trees</h3>
+                        <a href="#" class="button button-link">Go Shopping</a>
+                    </div>
 
-	<script type="text/javascript" src="js/particles.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+                    <div class="decoration__data">
+                        <img src="assets/img/decoration3.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Christmas Trees</h3>
+                        <a href="#" class="button button-link">Go Shopping</a>
+                    </div> -->
+                    
+                </div>
+            </section>
+
+            <!-- ========== ACCESSORIES ==========
+            <section class="accessory section bd-container" id="accessory">
+                <h2 class="section-title">New Christmas <br> Accessories</h2>
+
+                <div class="accessory__container bd-grid">
+                    <div class="accessory__content">
+                        <img src="assets/img/accessory1.png" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Snow Globe</h3>
+                        <span class="accessory__category">Accessory</span>
+                        <span class="accessory__preci">$9.45</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="assets/img/accessory2.png" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Candy</h3>
+                        <span class="accessory__category">Accessory</span>
+                        <span class="accessory__preci">$2.52</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="assets/img/accessory3.png" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Angel</h3>
+                        <span class="accessory__category">Accessory</span>
+                        <span class="accessory__preci">$13.15</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="assets/img/accessory4.png" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Sphere</h3>
+                        <span class="accessory__category">Accessory</span>
+                        <span class="accessory__preci">$4.25</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="assets/img/accessory5.png" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Surprise gift</h3>
+                        <span class="accessory__category">Accessory</span>
+                        <span class="accessory__preci">$7.99</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                    </div>
+                </div>
+            </section> -->
+
+
+            <!--========== CONTACT ==========-->
+
+         <section class="contact section bd-container" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+
+              <!-- <div class="address">
+                 <div class="mail">
+                    <i class='bx bx-mail-send'></i>
+                    <h4>teamdashweb@gmail.com</h4>
+                </div>
+
+                <div class="mail">
+                    <i class='bx bx-mail-send'></i>
+                    <h4>teamdashweb@gmail.com</h4>
+                 </div>
+
+                <div class="mail">
+                    <i class='bx bx-mail-send'></i>
+                    <h4>teamdashweb@gmail.com</h4>
+                </div>
+                </div> -->
+
+                <div class="contact__container bd-grid">
+                    <div class="info">
+                        <div class="address">
+                            <i class='bx bx-map' ></i>
+                        <h2>Calicut, Kerala</h2>
+                        </div>
+        
+                        <div class="address">
+                        <i class='bx bx-mail-send' ></i>
+                        <h2>teamdashweb@gmail.com</h2>
+                        </div>
+        
+                        <div class="address">
+                        <i class='bx bx-phone-call' ></i>
+                        <h2>+91 964 568 9734</h2>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <!-- <div class="contact__container bd-grid">
+                    <div class="info">
+                        <div class="address">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4>Location:</h4>
+                        <p>Calicut, Kerala</p>
+                        </div>
+        
+                        <div class="email">
+                        <i class="bi bi-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>mail@ajmalharis.me</p>
+                        </div>
+        
+                        <div class="phone">
+                        <i class="bi bi-phone"></i>
+                        <h4>Call:</h4>
+                        <p>+91 9061 180 805</p>
+                        </div>
+        
+                    </div>
+
+                    <div class="email-form">
+                        <form id="submit-form" action="" >
+                            <div class="row">
+                                <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                        
+                            <div class="text-center"><button class="snd-btn" type="submit">Send Message</button></div>
+                        </form>
+                        </div>
+                </div> -->
+            </section>
+
+  
+  <!-- End Contact Section -->
+
+            <!--========== SEND GIFT ==========-->
+            <!-- <section class="send section">
+                <div class="send__container bd-container bd-grid">
+                    <div class="send__content">
+                        <h2 class="section-title-center send__title">Send Gift Now</h2>
+                        <p class="send__description">Start giving away before the holidays are over. Write the home address of the person who will send the gift.</p>
+                        <form action="">
+                            <div class="send__direction">
+                                <input type="text" placeholder="House address" class="send__input">
+                                <a href="#" class="button">Send</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="send__img">
+                        <img src="assets/img/send.png" alt="">
+                    </div>
+                </div>
+            </section> -->
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">DashWeb</a>
+                    </h3>
+                    <p class="footer__description">You can contact us for <br> consultation</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">UI/UX design </a></li>
+                        <li><a href="#" class="footer__link">Web Development</a></li>
+                        <li><a href="#" class="footer__link">Wordpress Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Services</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">DashScholar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2021 DashWeb. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>

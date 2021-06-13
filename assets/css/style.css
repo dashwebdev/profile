@@ -567,6 +567,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  #hero .container {
+    padding-top: 0;
+    /* position: relative; */
+  }
+}
+
 
 @-webkit-keyframes pulsate-btn {
   0% {
